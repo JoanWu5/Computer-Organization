@@ -1,0 +1,343 @@
+m255
+K3
+13
+cModel Technology
+dE:\modeltech_10.1a\examples
+vAlu
+VJ:[az]MkiGGl[95_fc6d53
+r1
+31
+IMnVlcbzMT[3PoC_0k701n3
+Z0 dE:\jizu\lajipipeline
+w1524735334
+8E:/jizu/lajipipeline/Alu.v
+FE:/jizu/lajipipeline/Alu.v
+L0 3
+Z1 OE;L;10.1a;51
+Z2 o-work lajipipeline -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@alu
+!i10b 1
+!s85 0
+!s100 HMX>]^f8igYSaB<fjRlB^3
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/Alu.v|
+!s108 1524825527.842000
+!s107 ctrl_encode_def.v|E:/jizu/lajipipeline/Alu.v|
+vCtrl
+V5P6]SXQ_Ao?Y3=kHH92hQ1
+r1
+31
+Ia`jZQ@C7XI2^k<f:ngiSl3
+Z3 dE:\jizu\lajipipeline
+w1524804186
+8E:/jizu/lajipipeline/Ctrl.v
+FE:/jizu/lajipipeline/Ctrl.v
+L0 4
+R1
+R2
+n@ctrl
+!i10b 1
+!s85 0
+!s100 :glQInEjeHEOC0zlBmXNN0
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/Ctrl.v|
+!s108 1524825527.946000
+!s107 instruction_def.v|ctrl_encode_def.v|E:/jizu/lajipipeline/Ctrl.v|
+vDMem
+V^mZ^EWooLeaQ==S>2P?g;0
+r1
+31
+IVMO><CeaNN8XMm[D>7LhW1
+R3
+w1523338115
+8E:/jizu/lajipipeline/DMem.v
+FE:/jizu/lajipipeline/DMem.v
+L0 2
+R1
+R2
+n@d@mem
+!i10b 1
+!s85 0
+!s100 b`8DTAaZ^Cd@T6:i`RE6i2
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/DMem.v|
+!s108 1524825529.292000
+!s107 E:/jizu/lajipipeline/DMem.v|
+vEXMEM
+Vj<U_Wb8fGb`]_;`EXdi8g0
+r1
+31
+I4VQXd5E=mFV]WP9VZWO0B1
+R3
+w1521811886
+8E:/jizu/lajipipeline/EXMEM.v
+FE:/jizu/lajipipeline/EXMEM.v
+L0 2
+R1
+R2
+n@e@x@m@e@m
+!i10b 1
+!s85 0
+!s100 G9WiVOLK==Kejdl@Wc5JK2
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/EXMEM.v|
+!s108 1524825528.112000
+!s107 E:/jizu/lajipipeline/EXMEM.v|
+vExtender
+VX<KDk7Y><P3EkfboZHNMI0
+r1
+31
+I;]P?93483d0K]^6H[`=fP1
+R3
+w1523337143
+8E:/jizu/lajipipeline/Extender.v
+FE:/jizu/lajipipeline/Extender.v
+L0 2
+R1
+R2
+n@extender
+!i10b 1
+!s85 0
+!s100 0SBe?hGe?O^o?4@LC4id10
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/Extender.v|
+!s108 1524825528.201000
+!s107 ctrl_encode_def.v|E:/jizu/lajipipeline/Extender.v|
+vGPR
+VXafm@[6TSlmzMRG@Sa]DE2
+r1
+31
+IK^8i>VzoAGOl?;V3MoW4J0
+R3
+w1523337157
+8E:/jizu/lajipipeline/GPR.v
+FE:/jizu/lajipipeline/GPR.v
+L0 2
+R1
+R2
+n@g@p@r
+!i10b 1
+!s85 0
+!s100 ][R`0^Eab6^UH1MXgW^963
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/GPR.v|
+!s108 1524825528.279000
+!s107 E:/jizu/lajipipeline/GPR.v|
+vHazard
+!i10b 1
+Vf=@bJ=nAIdLW5OaXLk_Nk1
+r1
+!s85 0
+31
+ILDk<>Gee[^mFMoA`6ZgcC3
+R3
+w1524792557
+8E:/jizu/lajipipeline/Hazard.v
+FE:/jizu/lajipipeline/Hazard.v
+L0 2
+R1
+R2
+n@hazard
+!s100 U^IJVCoETiD[[41@^idea1
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/Hazard.v|
+!s108 1524825528.367000
+!s107 E:/jizu/lajipipeline/Hazard.v|
+vIDEX
+VgRNE7I6BICggj0Qcic>@z1
+r1
+31
+I<mP7a34?Fk1^1P8]PBV4F1
+R3
+w1523337074
+8E:/jizu/lajipipeline/IDEX.v
+FE:/jizu/lajipipeline/IDEX.v
+L0 2
+R1
+R2
+n@i@d@e@x
+!i10b 1
+!s85 0
+!s100 G8[cd1S`HSBnmX^b>o1m31
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/IDEX.v|
+!s108 1524825528.457000
+!s107 E:/jizu/lajipipeline/IDEX.v|
+vIFID
+VC3jYSN1Db4?hWl1PR^zSB2
+r1
+31
+IS><LGKS4c9HP^WCMSJGXW2
+R3
+w1523337103
+8E:/jizu/lajipipeline/IFID.v
+FE:/jizu/lajipipeline/IFID.v
+L0 1
+R1
+R2
+n@i@f@i@d
+!i10b 1
+!s85 0
+!s100 =<fB5L07cQ:bB6m]7EUK33
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/IFID.v|
+!s108 1524825528.542000
+!s107 E:/jizu/lajipipeline/IFID.v|
+vIM
+VB76>nPlO4@Zjh[ebZ8[MY0
+r1
+31
+IOQ<_6FWAMmBW;><nz9JWi2
+R3
+w1458216568
+8E:/jizu/lajipipeline/IM.v
+FE:/jizu/lajipipeline/IM.v
+L0 3
+R1
+R2
+n@i@m
+!i10b 1
+!s85 0
+!s100 ZJN059ReXC^]U?PNU7N9k2
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/IM.v|
+!s108 1524825528.635000
+!s107 E:/jizu/lajipipeline/IM.v|
+vMEMWB
+V49cBKJio@>49ZRH;PlZ[L3
+r1
+31
+I?oE5jAA4PIVQ;?nW5_Kii3
+R3
+w1523337117
+8E:/jizu/lajipipeline/MEMWB.v
+FE:/jizu/lajipipeline/MEMWB.v
+L0 1
+R1
+R2
+n@m@e@m@w@b
+!i10b 1
+!s85 0
+!s100 L;U09SmNB7gb_FE<:OU]e3
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/MEMWB.v|
+!s108 1524825528.786000
+!s107 E:/jizu/lajipipeline/MEMWB.v|
+vMips
+V;U]g=61l3n1fSQFLIPZn<1
+r1
+31
+Inn><f=DhZmTok?ejMzX<D0
+R3
+w1524791924
+8E:/jizu/lajipipeline/Mips.v
+FE:/jizu/lajipipeline/Mips.v
+L0 2
+R1
+R2
+n@mips
+!i10b 1
+!s85 0
+!s100 <]ehT58hl@WZWeg9k4Ha22
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/Mips.v|
+!s108 1524825528.867000
+!s107 instruction_def.v|E:/jizu/lajipipeline/Mips.v|
+vMips_tb
+VdThPdFVIogFR=Z2bRH8R^3
+r1
+31
+I4DVbUkC]IC9bU6GSan7ER0
+R3
+w1520333482
+8E:/jizu/lajipipeline/mips_tb.v
+FE:/jizu/lajipipeline/mips_tb.v
+L0 1
+R1
+R2
+n@mips_tb
+!i10b 1
+!s85 0
+!s100 @z9i6n1OB<^oYIdTm;kOG3
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/mips_tb.v|
+!s108 1524825528.955000
+!s107 E:/jizu/lajipipeline/mips_tb.v|
+vmux2compare1
+V=9CY0DI^4f>?VNbhB8[gH2
+r1
+31
+I^:m8]?H?Mm8FR?o7f4VA@0
+R3
+Z4 w1523336868
+Z5 8E:/jizu/lajipipeline/mux.v
+Z6 FE:/jizu/lajipipeline/mux.v
+L0 43
+R1
+Z7 !s108 1524825529.047000
+Z8 !s107 E:/jizu/lajipipeline/mux.v|
+Z9 !s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/mux.v|
+R2
+!i10b 1
+!s85 0
+!s100 ?1bH<07><<:TeRaP:V_R`3
+vmux2compare2
+V>@jRMkQ<fE;?AeDf<]RU;0
+r1
+31
+IaUzC]05Q9>4EM;1E9iS:n1
+R3
+R4
+R5
+R6
+L0 63
+R1
+R7
+R8
+R9
+R2
+!i10b 1
+!s85 0
+!s100 WzPzH?UVe3_jQ4?^bBMJ^2
+vmux4alu1
+V0cm`=^5df1J8mk8X;nMcd1
+r1
+31
+IKXeOZKlIf<mPcRlIzaTNF1
+R3
+R4
+R5
+R6
+L0 1
+R1
+R7
+R8
+R9
+R2
+!i10b 1
+!s85 0
+!s100 MWUMBIAQ28T:kj>c<kWPB2
+vmux4alu2
+VgQ`Jh5ObA2:G0]IDLkIVl3
+r1
+31
+I[iOZ38cLmh7VLl>f9RXB[0
+R3
+R4
+R5
+R6
+L0 22
+R1
+R7
+R8
+R9
+R2
+!i10b 1
+!s85 0
+!s100 E]mA;8i[g>E<ba09M6dNZ2
+vPcUnit
+VRL^fEfM9H2_zcYc6GfOR;2
+r1
+31
+IEZk^W`QPZ<TdO?n[hjZfR2
+R3
+w1523354394
+8E:/jizu/lajipipeline/PcUnit.v
+FE:/jizu/lajipipeline/PcUnit.v
+L0 2
+R1
+R2
+n@pc@unit
+!i10b 1
+!s85 0
+!s100 _AIY_Km66TV8QBFGch9=k0
+!s90 -reportprogress|300|-work|lajipipeline|-vopt|E:/jizu/lajipipeline/PcUnit.v|
+!s108 1524825529.206000
+!s107 E:/jizu/lajipipeline/PcUnit.v|

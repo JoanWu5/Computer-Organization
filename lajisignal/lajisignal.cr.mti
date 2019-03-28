@@ -1,0 +1,70 @@
+E:/jizu/lajisignal/instruction_def.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/instruction_def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} E:/jizu/lajisignal/ctrl_encode_def.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/ctrl_encode_def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} E:/jizu/lajisignal/Ctrl.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/Ctrl.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Ctrl
+
+Top level modules:
+	Ctrl
+
+} {} {}} E:/jizu/lajisignal/GPR.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/GPR.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module GPR
+
+Top level modules:
+	GPR
+
+} {} {}} E:/jizu/lajisignal/Mips.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/Mips.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Mips
+
+Top level modules:
+	Mips
+
+} {} {}} E:/jizu/lajisignal/IM.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/IM.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module IM
+
+Top level modules:
+	IM
+
+} {} {}} E:/jizu/lajisignal/mips_tb.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/mips_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Mips_tb
+
+Top level modules:
+	Mips_tb
+
+} {} {}} E:/jizu/lajisignal/Alu.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/Alu.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Alu
+
+Top level modules:
+	Alu
+
+} {} {}} E:/jizu/lajisignal/Extender.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/Extender.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Extender
+
+Top level modules:
+	Extender
+
+} {} {}} E:/jizu/lajisignal/DMem.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/DMem.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module DMem
+
+Top level modules:
+	DMem
+
+} {} {}} E:/jizu/lajisignal/PcUnit.v {1 {vlog -work lajisignal -vopt E:/jizu/lajisignal/PcUnit.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module PcUnit
+
+Top level modules:
+	PcUnit
+
+} {} {}}

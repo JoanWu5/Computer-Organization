@@ -1,0 +1,278 @@
+`include "instruction_def.v"
+module Mips(Clk,Reset);
+	
+	input Clk;
+	input Reset;
+//PC	
+	wire [31:0] pcOut;
+
+//IM	
+	wire [4:0]  imAdr;
+	wire [31:0] opCode;
+	
+//GPR
+	wire [4:0] gprWeSel,gprReSel1,gprReSel2;
+	wire [31:0] gprDataIn;
+	
+	wire [31:0] gprDataOut1,gprDataOut2;
+	wire Equal;
+//Extender
+
+	wire [15:0] extDataIn;
+	wire [31:0] extDataOut;
+	
+//DMem
+
+	wire [4:0]  dmDataAdr;
+	wire [31:0] dmDataOut;
+	
+//Ctrl
+	
+	wire [5:0]		op;
+	wire [5:0]		funct;
+	wire 		jump;						//指令跳转
+	wire 		RegDst;						
+	wire 		Branch;						//分支
+	wire 		MemR;						//读存储器
+	wire 		Mem2R;						//数据存储器到寄存器堆
+	wire 		MemW;						//写数据存储器
+	wire 		RegW;						//寄存器堆写入数据
+	wire		Alusrc;						//运算器操作数选择
+	wire [1:0]		ExtOp;						//位扩展/符号扩展选择
+	wire [4:0]  Aluctrl;						//Alu运算选择
+
+//Alu
+	wire [31:0] aluDataIn2;
+	wire [31:0]	aluDataOut;
+	wire 	zero;
+	
+//IFID
+  wire [31:0] pc_in_IFID;
+  wire [31:0] instr_in_IFID;
+  wire [31:0] pc_out_IFID;
+  wire [31:0] instr_out_IFID;
+  
+//IDEX
+  wire [31:0] instr_in_IDEX;
+  wire [31:0] extData_in_IDEX;
+  wire [31:0] data1_in_IDEX;
+  wire [31:0] data2_in_IDEX;
+  wire [4:0] RegAddrI_in_IDEX;
+  wire [4:0] RegAddrR_in_IDEX;
+  wire RegDst_in_IDEX;
+  wire [4:0] ALUop_in_IDEX;
+  wire [1:0] ALUsrc_in_IDEX;
+  wire Branch_in_IDEX;
+  wire MemRead_in_IDEX;
+  wire MemWrite_in_IDEX;
+  wire RegWrite_in_IDEX;
+  wire MemToReg_in_IDEX;
+  wire [31:0] instr_out_IDEX;
+  wire [31:0] extData_out_IDEX;
+  wire [31:0] data1_out_IDEX;
+  wire [31:0] data2_out_IDEX;
+  wire [4:0] RegAddrI_out_IDEX;
+  wire [4:0] RegAddrR_out_IDEX;
+  wire RegDst_out_IDEX;
+  wire [4:0] ALUop_out_IDEX;
+  wire [1:0] ALUsrc_out_IDEX;
+  wire Branch_out_IDEX;
+  wire MemRead_out_IDEX;
+  wire MemWrite_out_IDEX;
+  wire RegWrite_out_IDEX;
+  wire MemToReg_out_IDEX;
+
+//EXMEM
+  wire [31:0] ALUresult_in_EXMEM;
+  wire zero_in_EXMEM;
+  wire [31:0] rt_in_EXMEM;
+  wire RegDst_in_EXMEM;
+  wire [4:0] RegAddrI_in_EXMEM;
+  wire [4:0] RegAddrR_in_EXMEM;
+  wire Branch_in_EXMEM;
+  wire MemRead_in_EXMEM;
+  wire MemWrite_in_EXMEM;
+  wire RegWrite_in_EXMEM;
+  wire MemToReg_in_EXMEM;
+  wire [31:0] ALUresult_out_EXMEM;
+  wire zero_out_EXMEM;
+  wire [31:0] rt_out_EXMEM;
+  wire RegDst_out_EXMEM;
+  wire [4:0] RegAddrI_out_EXMEM;
+  wire [4:0] RegAddrR_out_EXMEM;
+  wire Branch_out_EXMEM;
+  wire MemRead_out_EXMEM;
+  wire MemWrite_out_EXMEM;
+  wire RegWrite_out_EXMEM;
+  wire MemToReg_out_EXMEM;
+  
+//MEMWB
+  wire [31:0] ALUresult_in_MEMWB; 
+  wire [31:0] mem_in_MEMWB;
+  wire RegDst_in_MEMWB;
+  wire [4:0]  RegAddrI_in_MEMWB;
+  wire [4:0]  RegAddrR_in_MEMWB;
+  wire RegWrite_in_MEMWB;
+  wire MemToReg_in_MEMWB;
+  wire [31:0] ALUresult_out_MEMWB;
+  wire [31:0] mem_out_MEMWB;
+  wire RegDst_out_MEMWB_MEMWB;
+  wire [4:0]  RegAddrI_out_MEMWB;
+  wire [4:0]  RegAddrR_out_MEMWB;
+  wire RegWrite_out_MEMWB;
+  wire MemToReg_out_MEMWB;
+  
+//forwarding
+  wire [31:0] ForwardData1;
+  wire [31:0] ForwardData2;
+  
+  wire [4:0] IDEX_rd_in;
+  wire [4:0] EXMEM_rd_in;
+  wire [4:0] MEMWB_rd_in;
+  wire [1:0] ForwardA_out;
+  wire [1:0] ForwardB_out;
+  wire stallID;
+  wire stallPC;
+  wire flushIFID;
+  wire flushIDEX;
+  wire compareSrc1;
+  wire compareSrc2;
+  wire [31:0] compareData1;
+  wire [31:0] compareData2;
+	
+//PC块实例化	
+  assign pcSel = ((Branch&&((op==`INSTR_BEQ_OP)?Equal:!Equal))==1)?1:0;
+  PcUnit U_pcUnit(.PC(pcOut),.OldPC(pc_out_IFID),.stall(stallPC),.PcReSet(Reset),.PcSel(pcSel),.Clk(Clk),.Adress(extDataOut),.Adj(instr_out_IFID[25:0]),.j(jump));
+	
+	assign imAdr = pcOut[6:2];
+//指令寄存器实例化	
+	IM U_IM(.OpCode(opCode),.ImAdress(imAdr));
+	
+
+
+//IFID
+  assign pc_in_IFID=pcOut+4;
+  assign instr_in_IFID=opCode;
+  IFID U_IFID(.clk(Clk),.rst(Reset),.flush(flushIFID),.pc_in(pc_in_IFID),.instr_in(instr_in_IFID),
+             .pc_out(pc_out_IFID),.instr_out(instr_out_IFID),.stall(stallID));
+
+	
+
+	
+//寄存器堆实例化
+	assign gprReSel1 = instr_out_IFID[25:21];
+	assign gprReSel2 = instr_out_IFID[20:16]; 
+	GPR U_gpr(.DataOut1(gprDataOut1),.DataOut2(gprDataOut2),.clk(Clk),.WData(gprDataIn)
+			  ,.WE(RegWrite_out_MEMWB),.WeSel(gprWeSel),.ReSel1(gprReSel1),.ReSel2(gprReSel2));
+  mux2compare1 U_mux2compare1(.d0(gprDataOut1),.d1(ALUresult_out_EXMEM),.s(compareSrc1),.y(compareData1));
+  mux2compare2 U_mux2compare2(.d0(gprDataOut2),.d1(ALUresult_out_EXMEM),.s(compareSrc2),.y(compareData2));
+	assign Equal=	(compareData1==compareData2);
+	
+//控制器实例化	
+ 	assign op = instr_out_IFID[31:26];
+	assign funct = instr_out_IFID[5:0];
+	Ctrl U_Ctrl(.jump(jump),.RegDst(RegDst),.Branch(Branch),.MemR(MemR),.Mem2R(Mem2R)
+				,.MemW(MemW),.RegW(RegW),.Alusrc(Alusrc),.ExtOp(ExtOp),.Aluctrl(Aluctrl)
+				,.OpCode(op),.funct(funct));
+				
+//扩展器实例化	
+  assign extDataIn = instr_out_IFID[15:0];
+	Extender U_extend(.ExtOut(extDataOut),.DataIn(extDataIn),.ExtOp(ExtOp));
+	
+	
+//IDEX
+  assign pc_in_IDEX=pc_out_IFID;
+  assign instr_in_IDEX=instr_out_IFID;
+  assign extData_in_IDEX=extDataOut;
+  assign data1_in_IDEX=gprDataOut1;
+  assign data2_in_IDEX=gprDataOut2;
+  assign RegAddrI_in_IDEX=instr_out_IFID[20:16];
+  assign RegAddrR_in_IDEX=instr_out_IFID[15:11];
+  assign RegDst_in_IDEX=RegDst;
+  assign ALUop_in_IDEX=Aluctrl;
+  assign ALUsrc_in_IDEX=Alusrc;
+  assign MemRead_in_IDEX=MemR;
+  assign MemWrite_in_IDEX=MemW;
+  assign RegWrite_in_IDEX=RegW;
+  assign MemToReg_in_IDEX=Mem2R;
+  IDEX U_IDEX(.clk(Clk),.rst(Reset),.instr_in(instr_in_IDEX),.flush(flushIDEX),.extData_in(extData_in_IDEX),.data1_in(data1_in_IDEX),
+      .data2_in(data2_in_IDEX),.RegAddrI_in(RegAddrI_in_IDEX),.RegAddrR_in(RegAddrR_in_IDEX),
+      .RegDst_in(RegDst_in_IDEX),.ALUop_in(ALUop_in_IDEX),.ALUsrc_in(ALUsrc_in_IDEX),
+      .MemRead_in(MemRead_in_IDEX),.MemWrite_in(MemWrite_in_IDEX),.RegWrite_in(RegWrite_in_IDEX),
+      .MemToReg_in(MemToReg_in_IDEX), .instr_out(instr_out_IDEX),.extData_out(extData_out_IDEX),
+      .data1_out(data1_out_IDEX),.data2_out(data2_out_IDEX),.RegAddrI_out(RegAddrI_out_IDEX),.RegAddrR_out(RegAddrR_out_IDEX),
+      .RegDst_out(RegDst_out_IDEX),.ALUop_out(ALUop_out_IDEX),.ALUsrc_out(ALUsrc_out_IDEX),
+      .MemRead_out(MemRead_out_IDEX),.MemWrite_out(MemWrite_out_IDEX),
+      .RegWrite_out(RegWrite_out_IDEX),.MemToReg_out(MemToReg_out_IDEX));
+  
+  mux4alu1 U_mux4alu1(.d0(data1_out_IDEX),.d1(gprDataIn),.d2(ALUresult_out_EXMEM),.s(ForwardA_out),.y(ForwardData1));
+  mux4alu2 U_mux4alu2(.d0(data2_out_IDEX),.d1(gprDataIn),.d2(ALUresult_out_EXMEM),.s(ForwardB_out),.y(ForwardData2));
+
+	assign aluDataIn2=(ALUsrc_out_IDEX==1)?extData_out_IDEX:ForwardData2;	
+//ALU实例化	
+	Alu U_Alu(.AluResult(aluDataOut),.Zero(zero),.DataIn1(ForwardData1),.DataIn2(aluDataIn2),
+	.AluCtrl(ALUop_out_IDEX),.shame(instr_out_IDEX[10:6]));
+	
+	
+
+	
+	
+	//EXMEM
+  assign ALUresult_in_EXMEM=aluDataOut;
+  
+  assign rt_in_EXMEM=ForwardData2;
+  assign RegDst_in_EXMEM=RegDst_out_IDEX;
+  assign RegAddrI_in_EXMEM=RegAddrI_out_IDEX;
+  assign RegAddrR_in_EXMEM=RegAddrR_out_IDEX;
+  assign MemRead_in_EXMEM=MemRead_out_IDEX;
+  assign MemWrite_in_EXMEM=MemWrite_out_IDEX;
+  assign RegWrite_in_EXMEM=RegWrite_out_IDEX;
+  assign MemToReg_in_EXMEM=MemToReg_out_IDEX;
+  assign ALUresult_in_EXMEM=aluDataOut;
+  
+  EXMEM U_EXMEM(.clk(Clk),.rst(Reset) ,.ALUresult_in(ALUresult_in_EXMEM),.zero_in(zero_in_EXMEM),
+    .rt_in(rt_in_EXMEM),.RegDst_in(RegDst_in_EXMEM),.RegAddrI_in(RegAddrI_in_EXMEM),.RegAddrR_in(RegAddrR_in_EXMEM),
+    .MemRead_in(MemRead_in_EXMEM),.MemWrite_in(MemWrite_in_EXMEM),.RegWrite_in(RegWrite_in_EXMEM),
+    .MemToReg_in(MemToReg_in_EXMEM),.ALUresult_out(ALUresult_out_EXMEM),.zero_out(zero_out_EXMEM),.rt_out(rt_out_EXMEM)
+    ,.RegDst_out(RegDst_out_EXMEM),.RegAddrI_out(RegAddrI_out_EXMEM),.RegAddrR_out(RegAddrR_out_EXMEM),
+    .MemRead_out(MemRead_out_EXMEM),.MemWrite_out(MemWrite_out_EXMEM),
+    .RegWrite_out(RegWrite_out_EXMEM),.MemToReg_out(MemToReg_out_EXMEM));
+
+  
+	
+//DM实例化
+
+	assign dmDataAdr = ALUresult_out_EXMEM[4:0];
+	DMem U_Dmem(.DataOut(dmDataOut),.DataAdr(dmDataAdr),.DataIn(rt_out_EXMEM),.DMemW(MemWrite_out_EXMEM),.DMemR(MemRead_out_EXMEM),.clk(Clk));
+	
+
+  
+//MEMWB
+  assign ALUresult_in_MEMWB=ALUresult_out_EXMEM;
+  assign mem_in_MEMWB=dmDataOut;
+  assign RegDst_in_MEMWB=RegDst_out_EXMEM;
+  assign RegAddrI_in_MEMWB=RegAddrI_out_EXMEM;
+  assign RegAddrR_in_MEMWB=RegAddrR_out_EXMEM;
+  assign RegWrite_in_MEMWB=RegWrite_out_EXMEM;
+  assign MemToReg_in_MEMWB=MemToReg_out_EXMEM;
+  MEMWB U_MEMWB(.clk(Clk),.rst(Reset), .ALUresult_in(ALUresult_in_MEMWB) ,.mem_in(mem_in_MEMWB),.RegDst_in(RegDst_in_MEMWB),
+  .RegAddrI_in(RegAddrI_in_MEMWB),.RegAddrR_in(RegAddrR_in_MEMWB),.RegWrite_in(RegWrite_in_MEMWB),.MemToReg_in(MemToReg_in_MEMWB),
+  .ALUresult_out(ALUresult_out_MEMWB),.mem_out(mem_out_MEMWB),.RegDst_out(RegDst_out_MEMWB),.RegAddrI_out(RegAddrI_out_MEMWB),
+  .RegAddrR_out(RegAddrR_out_MEMWB),.RegWrite_out(RegWrite_out_MEMWB),.MemToReg_out(MemToReg_out_MEMWB));
+  assign gprDataIn = (MemToReg_out_MEMWB==1)?mem_out_MEMWB:ALUresult_out_MEMWB;
+	assign gprWeSel = (RegDst_out_MEMWB==1)?RegAddrR_out_MEMWB:RegAddrI_out_MEMWB;
+	
+	
+//Hazard
+  assign IDEX_rd_in=(RegDst_out_IDEX==0)?RegAddrI_out_IDEX:RegAddrR_out_IDEX;
+  assign EXMEM_rd_in=(RegDst_out_EXMEM==0)?RegAddrI_out_EXMEM:RegAddrR_out_EXMEM;
+  assign MEMWB_rd_in=(RegDst_out_MEMWB==0)?RegAddrI_out_MEMWB:RegAddrR_out_MEMWB;
+  Hazard U_DepAndForw(.EXMEM_RegWrite(RegWrite_out_EXMEM),.EXMEM_rd(EXMEM_rd_in),.IDEX_rs(instr_out_IDEX[25:21]),
+  .IDEX_rt(instr_out_IDEX[20:16]),.MEMWB_RegWrite(RegWrite_out_MEMWB),.MEMWB_rd(MEMWB_rd_in),.ForwardA(ForwardA_out),
+  .ForwardB(ForwardB_out),.IDEX_MemRead(MemRead_out_IDEX),.IFID_rs(instr_out_IFID[25:21]),
+  .IFID_rt(instr_out_IFID[20:16]),.stallID(stallID),.stallPC(stallPC),.flushIFID(flushIFID),.flushIDEX(flushIDEX),
+  .pcsel(pcSel),.jump(jump),.branch(Branch),.EXMEM_MemRead(MemRead_out_EXMEM),
+  .compareSrc1(compareSrc1),.compareSrc2(compareSrc2),.IDEX_rd(IDEX_rd_in),.IDEX_RegWrite(RegWrite_out_IDEX),
+  .EXMEM_rt(rt_out_EXMEM[20:16]));
+  
+endmodule

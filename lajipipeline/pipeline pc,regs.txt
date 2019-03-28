@@ -1,0 +1,249 @@
+#PC = 0xxxxxxxxx, IR = 0xxxxxxxxx
+# PC = 0x00003000, IR = 0x3c011000
+# R[00-07]=00000000, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=xxxxxxxx
+run
+# PC = 0x00003004, IR = 0x34212211
+# R[00-07]=00000000, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=xxxxxxxx
+run
+# PC = 0x00003008, IR = 0x3c021000
+# R[00-07]=00000000, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=xxxxxxxx
+run
+# PC = 0x0000300c, IR = 0x34424433
+# R[00-07]=00000000, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=xxxxxxxx
+run
+# PC = 0x00003010, IR = 0x00411820
+# R[00-07]=00000000, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  01]=xxxxxxxx
+run
+# PC = 0x00003014, IR = 0xac030000
+# R[00-07]=00000000, 10000000, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  01]=10000000
+run
+# PC = 0x00003018, IR = 0x3c043000
+# R[00-07]=00000000, 10002211, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  02]=xxxxxxxx
+run
+# PC = 0x0000301c, IR = 0x34845566
+# R[00-07]=00000000, 10002211, 10000000, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  02]=10000000
+run
+# PC = 0x00003020, IR = 0x00642822
+# R[00-07]=00000000, 10002211, 10004433, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  03]=xxxxxxxx
+run
+# PC = 0x00003024, IR = 0xac050004
+# R[00-07]=00000000, 10002211, 10004433, 20006644, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  03]=20006644
+run
+# PC = 0x00003028, IR = 0x8c060000
+# R[00-07]=00000000, 10002211, 10004433, 20006644, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  04]=xxxxxxxx
+run
+# PC = 0x0000302c, IR = 0x00c5382a
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30000000, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  04]=30000000
+run
+# PC = 0x00003030, IR = 0x10e00001
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  05]=xxxxxxxx
+run
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  05]=f00010de
+run
+# PC = 0x00003034, IR = 0x08000c10
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, xxxxxxxx, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  06]=xxxxxxxx
+run
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  07]=xxxxxxxx
+run
+# PC = 0x00003038, IR = 0x0043402a
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, xxxxxxxx
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  07]=xxxxxxxx
+run
+# PC = 0x0000303c, IR = 0x1500fffd
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=00000000
+run
+# PC = 0x00003040, IR = 0x34090010
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=00000000
+run
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=00000000
+run
+# PC = 0x00003034, IR = 0x08000c10
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  08]=xxxxxxxx
+run
+# PC = 0x00003038, IR = 0x0043402a
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=00000000
+run
+# PC = 0x00003040, IR = 0x34090010
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=00000000
+run
+# PC = 0x00003044, IR = 0x00095140
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=00000000
+run
+# PC = 0x00003048, IR = 0x000a5902
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=00000000
+run
+# PC = 0x0000304c, IR = 0x200d1234
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  00]=00000000
+run
+# PC = 0x00003050, IR = 0x200e00ff
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  09]=xxxxxxxx
+run
+# PC = 0x00003054, IR = 0x01ae7824
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, 00000010, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  0a]=xxxxxxxx
+run
+# PC = 0x00003058, IR = 0x3c10ffff
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, 00000010, 00000200, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  0b]=xxxxxxxx
+run
+# PC = 0x0000305c, IR = 0x01b08825
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, 00000010, 00000200, 00000020, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  0d]=xxxxxxxx
+run
+# PC = 0x00003060, IR = 0x00419021
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, 00000010, 00000200, 00000020, xxxxxxxx, 00001234, xxxxxxxx, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  0e]=xxxxxxxx
+run
+# PC = 0x00003064, IR = 0x00649823
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, 00000010, 00000200, 00000020, xxxxxxxx, 00001234, 000000ff, xxxxxxxx
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  0f]=xxxxxxxx
+run
+# PC = 0x00003068, IR = 0x08000c00
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, 00000010, 00000200, 00000020, xxxxxxxx, 00001234, 000000ff, 00000034
+# R[16-23]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  10]=xxxxxxxx
+run
+# PC = 0x0000306c, IR = 0xxxxxxxxx
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, 00000010, 00000200, 00000020, xxxxxxxx, 00001234, 000000ff, 00000034
+# R[16-23]=ffff0000, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  11]=xxxxxxxx
+run
+# PC = 0x00003000, IR = 0x3c011000
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, 00000010, 00000200, 00000020, xxxxxxxx, 00001234, 000000ff, 00000034
+# R[16-23]=ffff0000, ffff1234, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  12]=xxxxxxxx
+run
+# PC = 0x00003004, IR = 0x34212211
+# R[00-07]=00000000, 10002211, 10004433, 20006644, 30005566, f00010de, 20006644, 00000000
+# R[08-15]=00000001, 00000010, 00000200, 00000020, xxxxxxxx, 00001234, 000000ff, 00000034
+# R[16-23]=ffff0000, ffff1234, 20006644, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[24-31]=xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx, xxxxxxxx
+# R[  13]=xxxxxxxx

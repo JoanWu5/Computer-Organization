@@ -1,0 +1,118 @@
+E:/jizu/lajipipeline/ctrl_encode_def.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/ctrl_encode_def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} E:/jizu/lajipipeline/instruction_def.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/instruction_def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} E:/jizu/lajipipeline/Mips.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/Mips.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Mips
+
+Top level modules:
+	Mips
+
+} {} {}} E:/jizu/lajipipeline/Alu.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/Alu.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Alu
+
+Top level modules:
+	Alu
+
+} {} {}} E:/jizu/lajipipeline/mux.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/mux.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux4alu1
+-- Compiling module mux4alu2
+-- Compiling module mux2compare1
+-- Compiling module mux2compare2
+
+Top level modules:
+	mux4alu1
+	mux4alu2
+	mux2compare1
+	mux2compare2
+
+} {} {}} E:/jizu/lajipipeline/PcUnit.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/PcUnit.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module PcUnit
+
+Top level modules:
+	PcUnit
+
+} {} {}} E:/jizu/lajipipeline/EXMEM.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/EXMEM.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module EXMEM
+
+Top level modules:
+	EXMEM
+
+} {} {}} E:/jizu/lajipipeline/MEMWB.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/MEMWB.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module MEMWB
+
+Top level modules:
+	MEMWB
+
+} {} {}} E:/jizu/lajipipeline/GPR.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/GPR.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module GPR
+
+Top level modules:
+	GPR
+
+} {} {}} E:/jizu/lajipipeline/Hazard.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/Hazard.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Hazard
+
+Top level modules:
+	Hazard
+
+} {} {}} E:/jizu/lajipipeline/IDEX.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/IDEX.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module IDEX
+
+Top level modules:
+	IDEX
+
+} {} {}} E:/jizu/lajipipeline/DMem.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/DMem.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module DMem
+
+Top level modules:
+	DMem
+
+} {} {}} E:/jizu/lajipipeline/IFID.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/IFID.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module IFID
+
+Top level modules:
+	IFID
+
+} {} {}} E:/jizu/lajipipeline/Ctrl.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/Ctrl.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Ctrl
+
+Top level modules:
+	Ctrl
+
+} {} {}} E:/jizu/lajipipeline/mips_tb.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/mips_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Mips_tb
+
+Top level modules:
+	Mips_tb
+
+} {} {}} E:/jizu/lajipipeline/IM.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/IM.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module IM
+
+Top level modules:
+	IM
+
+} {} {}} E:/jizu/lajipipeline/Extender.v {1 {vlog -work lajipipeline -vopt E:/jizu/lajipipeline/Extender.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Extender
+
+Top level modules:
+	Extender
+
+} {} {}}

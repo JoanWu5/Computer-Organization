@@ -1,0 +1,176 @@
+m255
+K3
+13
+cModel Technology
+dE:\modeltech_10.1a\examples
+vAlu
+Va^jFHSjBiE@[ejUB2FYAM2
+r1
+31
+ISkg?1hVR9aHX4F2LB?@A@1
+Z0 dE:\jizu\lajisignal
+w1521513796
+8E:/jizu/lajisignal/Alu.v
+FE:/jizu/lajisignal/Alu.v
+L0 3
+Z1 OE;L;10.1a;51
+Z2 o-work lajisignal -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@alu
+!i10b 1
+!s85 0
+!s100 5Q[QbmMHED]2P1O_24Lz`2
+!s90 -reportprogress|300|-work|lajisignal|-vopt|E:/jizu/lajisignal/Alu.v|
+!s108 1522144725.529000
+!s107 ctrl_encode_def.v|E:/jizu/lajisignal/Alu.v|
+vCtrl
+VC4GYUl6R8E2Z9[4So`8X?2
+r1
+31
+Ie?SD_F5b^Y;R5=gbffUmd2
+Z3 dE:\jizu\lajisignal
+w1521513570
+8E:/jizu/lajisignal/Ctrl.v
+FE:/jizu/lajisignal/Ctrl.v
+L0 4
+R1
+R2
+n@ctrl
+!i10b 1
+!s85 0
+!s100 cVaW71?]dVeT[UobQQ1iM1
+!s90 -reportprogress|300|-work|lajisignal|-vopt|E:/jizu/lajisignal/Ctrl.v|
+!s108 1522144725.663000
+!s107 ctrl_encode_def.v|instruction_def.v|E:/jizu/lajisignal/Ctrl.v|
+vDMem
+!i10b 1
+V^mZ^EWooLeaQ==S>2P?g;0
+r1
+!s85 0
+31
+I>0R;P]kVS7Eo>_Hj3;YEi1
+R3
+w1521427016
+8E:/jizu/lajisignal/DMem.v
+FE:/jizu/lajisignal/DMem.v
+L0 2
+R1
+R2
+n@d@mem
+!s100 Zfad7_<LGMabb=l@n80H=0
+!s90 -reportprogress|300|-work|lajisignal|-vopt|E:/jizu/lajisignal/DMem.v|
+!s108 1522144725.830000
+!s107 E:/jizu/lajisignal/DMem.v|
+vExtender
+VP>HclNBOS>_zV`BdjgnLn1
+r1
+31
+IQQU@6Fe@E7B05JdM<[IcY2
+R3
+w1521427047
+8E:/jizu/lajisignal/Extender.v
+FE:/jizu/lajisignal/Extender.v
+L0 4
+R1
+R2
+n@extender
+!i10b 1
+!s85 0
+!s100 1Q[3=G=dNFL5WgTfOlSMG1
+!s90 -reportprogress|300|-work|lajisignal|-vopt|E:/jizu/lajisignal/Extender.v|
+!s108 1522144725.931000
+!s107 E:/jizu/lajisignal/Extender.v|
+vGPR
+VXafm@[6TSlmzMRG@Sa]DE2
+r1
+31
+Idz5^==e^zzQWK<H9ezn<00
+R3
+w1521506135
+8E:/jizu/lajisignal/GPR.v
+FE:/jizu/lajisignal/GPR.v
+L0 2
+R1
+R2
+n@g@p@r
+!i10b 1
+!s85 0
+!s100 JefMZVkX37TS8cDT^aG[;1
+!s90 -reportprogress|300|-work|lajisignal|-vopt|E:/jizu/lajisignal/GPR.v|
+!s108 1522144726.023000
+!s107 E:/jizu/lajisignal/GPR.v|
+vIM
+VB76>nPlO4@Zjh[ebZ8[MY0
+r1
+31
+I>RzQ0E@:<`[nDfTomZ^?:2
+R3
+w1458216566
+8E:/jizu/lajisignal/IM.v
+FE:/jizu/lajisignal/IM.v
+L0 3
+R1
+R2
+n@i@m
+!i10b 1
+!s85 0
+!s100 :IaRUnFIMKMPHcb8BH:9`2
+!s90 -reportprogress|300|-work|lajisignal|-vopt|E:/jizu/lajisignal/IM.v|
+!s108 1522144726.111000
+!s107 E:/jizu/lajisignal/IM.v|
+vMips
+V;U]g=61l3n1fSQFLIPZn<1
+r1
+31
+INJ6@O3R6W[IUbam<<FJlb0
+R3
+w1521513576
+8E:/jizu/lajisignal/Mips.v
+FE:/jizu/lajisignal/Mips.v
+L0 1
+R1
+R2
+n@mips
+!i10b 1
+!s85 0
+!s100 `O50HIHE_cf9Uz`QhOCK20
+!s90 -reportprogress|300|-work|lajisignal|-vopt|E:/jizu/lajisignal/Mips.v|
+!s108 1522144726.265000
+!s107 E:/jizu/lajisignal/Mips.v|
+vMips_tb
+VdThPdFVIogFR=Z2bRH8R^3
+r1
+31
+IZkmCg`X`eS3UINK7PEUL81
+R3
+w1521559807
+8E:/jizu/lajisignal/mips_tb.v
+FE:/jizu/lajisignal/mips_tb.v
+L0 1
+R1
+R2
+n@mips_tb
+!i10b 1
+!s85 0
+!s100 S9hSJdPBYPFoa:I2OAM5e3
+!s90 -reportprogress|300|-work|lajisignal|-vopt|E:/jizu/lajisignal/mips_tb.v|
+!s108 1522144726.362000
+!s107 E:/jizu/lajisignal/mips_tb.v|
+vPcUnit
+VS>VHelf<YOG9>imB<@JG>1
+r1
+31
+I1lgSD4NhDL2QZc^k_3mHl0
+R3
+w1521503388
+8E:/jizu/lajisignal/PcUnit.v
+FE:/jizu/lajisignal/PcUnit.v
+L0 1
+R1
+R2
+n@pc@unit
+!i10b 1
+!s85 0
+!s100 mn<Wgna8Le[DPoMe=zCF@2
+!s90 -reportprogress|300|-work|lajisignal|-vopt|E:/jizu/lajisignal/PcUnit.v|
+!s108 1522144726.464000
+!s107 E:/jizu/lajisignal/PcUnit.v|
